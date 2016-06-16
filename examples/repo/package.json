@@ -1,0 +1,13 @@
+{
+  "name": "myApp",
+  "version": "0.0.1",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "pre-push": "npm run lint",
+  "devDependencies": {
+    "eslint": "^0.24.1",
+    "eslint-config-invision": "1.5.11",
+    "eslint-plugin-react": "3.2.0"
+  }
+}

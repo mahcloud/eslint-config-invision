@@ -1,0 +1,10 @@
+# InVision codeship-steps for modules v1.1.1
+- name: Run tests
+  service: build
+  encrypted_dockercfg_path: codeship-dockercfg.encrypted
+  command: "npm run test-ci"
+- name: Publish to Public NPM
+  tag: ^(master|PRERELEASE-.*)$
+  service: publish
+  encrypted_dockercfg_path: codeship-dockercfg.encrypted
+  command: "true"

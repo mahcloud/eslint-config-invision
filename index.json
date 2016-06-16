@@ -1,0 +1,6 @@
+{
+	"extends": "./common.json",
+	"env": {
+		"node": true
+	}
+}

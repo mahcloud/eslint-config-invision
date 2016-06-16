@@ -1,0 +1,36 @@
+{
+  "name": "eslint-config-invision",
+  "version": "0.0.0-semantic-release",
+  "description": "ESLint Rules for InVision JavaScript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/InVisionApp/eslint-config-invision"
+  },
+  "author": "Kevin Lamping",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/InVisionApp/eslint-config-invision/issues"
+  },
+  "homepage": "https://github.com/InVisionApp/eslint-config-invision",
+  "scripts": {
+    "test-ci": "npm run test",
+    "test": "npm run test-failure-root && npm run test-failure-browser && npm run test-failure-react && npm run test-success && echo 'All Tests Pass'",
+    "test-success": "eslint . --ignore-pattern=**/fail* --ext=.js,.jsx",
+    "test-failure-root": "ERRORS=13 WARNINGS=1 eslint examples/fail.js -f ./failure-reporter.js",
+    "test-failure-browser": "ERRORS=2 WARNINGS=1 eslint examples/browser/fail.js -f ./failure-reporter.js",
+    "test-failure-react": "ERRORS=5 WARNINGS=0 eslint examples/react/fail.jsx -f ./failure-reporter.js"
+  },
+  "pre-push": "npm run test",
+  "dependencies": {
+    "eslint": "2.11.1",
+    "eslint-plugin-react": "5.1.1"
+  },
+  "peerDependencies": {
+    "eslint": "2.x",
+    "eslint-plugin-react": "5.x"
+  },
+  "devDependencies": {
+    "pre-git": "0.6.2",
+    "strip-json-comments": "1.0.2"
+  }
+}

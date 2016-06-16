@@ -1,0 +1,11 @@
+# InVision codeship-services for modules v1.1.0
+build:
+  build:
+    dockerfile_path: Dockerfile
+publish:
+  image: quay.io/invision/docker-node-publisher:v1
+  encrypted_env_file: codeship-publish.env.encrypted
+  volumes:
+    - .:/var/publish
+  environment:
+    - PUBLISH_PATH=/var/publish
