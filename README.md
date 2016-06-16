@@ -1,12 +1,15 @@
 
 [ ![Codeship Status for InVisionApp/eslint-config-invision](https://codeship.com/projects/adfb9760-0a34-0134-c5ef-0e5eddf2fc4b/status?branch=master)](https://codeship.com/projects/155507)
-[Release History](https://github.com/InVisionApp/eslint-config-invision/releases)
 
 ![Team: Engineering Velocity](https://img.shields.io/badge/team-engineering_velocity-lightgrey.svg)
-![Status: Live](https://img.shields.io/badge/status-live-green.svg)
 [![Slack: #eslint](https://img.shields.io/badge/slack-%23eslint-blue.svg)](https://invisionapp.slack.com/messages/eslint/)
 
 [![npm version](https://badge.fury.io/js/eslint-config-invision.svg)](https://badge.fury.io/js/eslint-config-invision)
+
+[![Dependency Status](https://david-dm.org/InVisionApp/eslint-config-invision.svg)](https://david-dm.org/InVisionApp/eslint-config-invision)
+[![devDependency Status](https://david-dm.org/InVisionApp/eslint-config-invision/dev-status.svg)](https://david-dm.org/InVisionApp/eslint-config-invision#info=devDependencies)
+
+[Release History](https://github.com/InVisionApp/eslint-config-invision/releases)
 
 # Overview
 
