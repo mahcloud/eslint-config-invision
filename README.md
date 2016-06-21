@@ -59,7 +59,7 @@ In this repo's folder, run `npm link`. In the folder of the project you want to 
 
 ## Commits
 
-To help generate meaningful changelogs, this repo follows [git commit message conventions](https://github.com/InVisionApp/guides/tree/master/style/git#commit-message-conventions).
+To help generate meaningful changelogs, this repo follows the [AngularJS git commit message conventions](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#heading=h.em2hiij8p46d).
 
 ## Releases
 
